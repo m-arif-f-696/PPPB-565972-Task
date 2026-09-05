@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Instagram Local</string>
+    <string name="username">Arif</string>
+    <string name="label_post">Post</string>
+    <string name="total_post">100</string>
+    <string name="label_follower">Follower</string>
+    <string name="total_follower">100</string>
+    <string name="label_following">Following</string>
+    <string name="total_following">100</string>
+    <string name="label_bio">Bio</string>
+    <string name="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.  Blanllam numqloremque voluptate dicta modi. Reprehenderit hic, mo</string>
+</resources>
