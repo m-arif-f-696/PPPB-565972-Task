@@ -7,6 +7,12 @@
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".MainActivity">
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Masukan Nama"/>
     <Button
         android:id="@+id/btn_to_second_activity"
         android:layout_width="match_parent"

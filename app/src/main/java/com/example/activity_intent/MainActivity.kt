@@ -23,6 +23,8 @@ class MainActivity : AppCompatActivity() {
             btnToSecondActivity.setOnClickListener {
                 val intentToSecondActivity =
                     Intent(this@MainActivity, SecondActivity::class.java)
+
+                intentToSecondActivity.putExtra(EXTRA_NAME, edtName.text.toString())
                 startActivity(intentToSecondActivity)
             }
         }
