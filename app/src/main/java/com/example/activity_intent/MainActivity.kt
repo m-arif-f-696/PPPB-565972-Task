@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
                 val intentToSecondActivity =
                     Intent(this@MainActivity, SecondActivity::class.java)
 
-                intentToSecondActivity.putExtra(EXTRA_NAME, edtName.text.toString())
+                intentToSecondActivity.putExtra("extra_name", edtName.text.toString())
                 startActivity(intentToSecondActivity)
             }
         }

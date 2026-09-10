@@ -6,18 +6,17 @@
     android:padding="16dp"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".SecondActivity">
-    <TextView
-        android:id="@+id/txt_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Second Activity"
-        android:textSize="24sp"/>
-
-    <Button
-        android:id="@+id/btn_to_third_activity"
-        android:layout_marginTop="16dp"
+    tools:context=".ThirdActivity">
+    <EditText
+        android:id="@+id/edt_address"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="To third activity"/>
+        android:layout_marginBottom="16dp"
+        android:hint="Masukan Alamat"/>
+    <Button
+        android:id="@+id/btn_to_second_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To second activity"/>
+
 </LinearLayout>
