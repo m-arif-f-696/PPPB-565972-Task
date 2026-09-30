@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Gambar Header Kelas -->
+        <ImageView
+            android:id="@+id/imgClassBanner"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:contentDescription="Class Banner"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background" />
+
+        <!-- Nama Kelas -->
+        <TextView
+            android:id="@+id/tvClassName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Pemrograman Aplikasi Bergerak"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <!-- Badge / Kategori Kelas -->
+        <TextView
+            android:id="@+id/tvClassCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="#E3F2FD"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4dp"
+            android:text="Praktikum TI - Semester 4"
+            android:textColor="#1976D2"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <!-- Separator Line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="16dp"
+            android:background="#E0E0E0" />
+
+        <!-- Judul Deskripsi -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi Kelas"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Teks Deskripsi -->
+        <TextView
+            android:id="@+id/tvClassDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="4dp"
+            android:text="Selamat datang di kelas Praktikum Pemrograman Aplikasi Bergerak! Di kelas ini kamu akan mempelajari pembuatan aplikasi Android interaktif dengan UI modern, Fragment, TabLayout, serta pengelolaan komponen UI."
+            android:textColor="#555555"
+            android:textSize="14sp" />
+
+        <!-- Separator Line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="20dp"
+            android:background="#E0E0E0" />
+
+        <!-- Section Akses Cepat -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Akses Halaman Praktikum"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Container Tombol Navigasi -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Tombol Ke Halaman Materi -->
+            <Button
+                android:id="@+id/btnGoToMateri"
+                style="@style/RoundedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:text="Lihat Materi" />
+
+            <!-- Tombol Ke Halaman Quiz -->
+            <Button
+                android:id="@+id/btnGoToQuiz"
+                style="@style/RoundedButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FF9800"
+                android:text="Lihat Quiz" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
