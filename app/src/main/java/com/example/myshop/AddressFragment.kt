@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import androidx.navigation.fragment.findNavController
 import com.example.myshop.databinding.FragmentAddressBinding
 
 class AddressFragment : Fragment() {
@@ -31,6 +32,14 @@ class AddressFragment : Fragment() {
             )
             adapterProvinces.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
             spinnerProvinces.adapter = adapterProvinces
+
+            btnDone.setOnClickListener {
+                findNavController().apply {
+                    previousBackStackEntry
+                        ?.savedStateHandle?.set("address",
+                            spinnerProvinces.selectedItem.toString())
+                }.navigateUp()
+            }
         }
     }
 

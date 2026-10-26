@@ -23,6 +23,20 @@ class CheckoutFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         with(binding){
+
+            // untuk menerima data yang dikirim dari fragment address
+            findNavController().currentBackStackEntry
+                ?.savedStateHandle?.let { handle ->
+                    handle.getLiveData<String>("address")
+                        .observe(viewLifecycleOwner) { res ->
+                            edtAddress.setText(res)
+                        }
+                }
+
+            btnDone.setOnClickListener {
+                findNavController().navigateUp()
+            }
+
             val args: CheckoutFragmentArgs by navArgs()
             txtProductName.setText(args.productName)
             edtAddress.setOnClickListener {
